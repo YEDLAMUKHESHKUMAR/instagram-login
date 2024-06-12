@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Login from "./components/Login";
+import Error from "./components/error";
 
 const AppLayout = () => {
   return (
@@ -25,6 +26,10 @@ const AppRoutes = createBrowserRouter([
         path: "/reels",
         element: <Login />,
       },
+      {
+        path:"/error",
+        element:<Error/> 
+      }
     ],
   },
 ]);
