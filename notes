@@ -1,0 +1,21 @@
+# commands to run 
+
+
+client :
+npx create-react-app 
+npm i react-router-dom
+
+
+
+
+api : 
+mongoose
+express
+cors
+nodemon
+bcryptjs
+jsonwebtoken
+body-parser
+dotenv  
+
+root file : npm i npm-run-all -g              (to run everything at a time ... do this after adding package.json  and scripts to package.json..... in root file )
